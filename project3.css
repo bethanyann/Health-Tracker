@@ -1,0 +1,282 @@
+/*
+Program 3
+#295e51 - dark blue
+#1F8A70 - turquoise blue
+#8DDB40 - lime green
+#FFE11A - yellow
+#fd7400- orange
+*/
+body {
+    color: #295e51;
+    font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+    margin: 0px;
+}
+#wrapper {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header {
+    width:95%; /*put this in the wrapper instead. can change if i want the header to extend fully from left to right*/
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    background-color: #1F8A70;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    /*border-radius: 15px; do i want rounded corners on the header? */
+}
+.center_vertical {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+.floatleft {
+    float: left;
+    padding-left: 10px;
+}
+.floatright {
+    float: right;
+    padding-right: 5px;
+}
+nav ul { list-style-type: none; }
+nav li {
+    display: inline;
+    color: black;
+}
+nav a{
+    padding: 1em;
+    width: 8em;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: none;
+}
+
+nav a:link { color: white; } /*change these eventually! */
+nav a:visited { color: #295e51 ; } /*change these eventually! */
+nav a:hover { color: #ffce34; } /*change these eventually! */
+
+main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    background-color: white;
+    min-height: 500px;
+}
+.circle_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.circle_links img{
+    display: inline;
+    width: 190px;
+    height: 190px;
+    margin-top: 60%;
+    padding: 0px 25px 2px 15px;
+	
+}
+.error_message_display {
+    font-size: .7em;
+    color: red;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+}
+.circle_links h3 {
+    display: block;
+    margin-top: 0px;
+    padding: 0px 20px 20px 15px;
+    text-align: center;
+    margin-bottom: 35%;
+}
+.center_heading {
+    text-align: center;
+    padding-top: 15px;
+}
+/*stuff to align the registration form - need to fix this*/
+#reg_table {
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#reg_table td { /*had th here too and was centering text weirdly*/
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login_table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*enter stats page *****************************/
+.submit {
+    padding: 7px;
+    background-color: #1F8A70;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    font-size: 1em;
+    font-weight:bold;
+}
+.stats_table {
+    padding-left: 30px;
+    text-align:left;
+}
+.image_float_left {
+    display:inline;
+    float:left;
+    margin-left: 25%;
+    padding: 0px;
+}
+#fitness_section1 {
+    text-align:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 150px 0px 20px 0px;
+    min-height:550px;
+    background-color:#fd7400;
+    color: black;
+}
+#fitness_section1 th {
+    text-align:right;
+}
+#fitness_section1 td {
+    text-align:left;
+}
+#fitness_section2 {
+    text-align:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 150px 0px 20px 0px;
+    min-height:550px;
+    background-color:#8DDB40;
+    color: white;
+}
+#fitness_section2 th {
+    text-align:right;
+}
+#fitness_section2 td {
+    text-align:left;
+}
+#fitness_section3 {
+    text-align:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 150px 0px 20px 0px;
+    min-height:550px;
+    background-color:#F0BA29;
+    color: white;
+}
+#fitness_section3 th {
+    text-align:right;
+}
+#fitness_section3 td,p {
+    text-align:left;
+}
+span {
+    color: white;
+}
+/* PROFILE stuff here *****************************/
+
+#bmi_chart {
+    display: inline;
+    float: right;
+    /*width: 50%;*/
+    margin-top:10px;
+    margin-right: 0px; 
+    margin-bottom:10px;
+}
+#sleep_chart{
+    display: block;
+    float: left;
+    margin-top:10px;
+    margin-right: 0px;
+}
+#steps_chart{
+    display: block;
+    float: right;
+    margin-top:10px;
+    margin-right: 0px;
+}
+#linebar {
+    clear:both;
+    width:auto;
+    margin-left: auto;
+    margin-right:auto;
+    background-color:#295e51;
+    min-height:5px;
+    margin-top:15px;
+}
+#profile_info{ /*for the div*/
+    text-align:center;
+}
+#user_info { /*for the table*/
+    display: inline;
+    float:left;
+    width:400px; /*max width=400*/
+    margin: 10px 0px 20px 100px;
+    padding-left:50px;
+}
+#user_info tr {
+    padding-bottom: 10px;
+    width: 200px;
+}
+#user_info tr th {
+    font-size: 1.3em;
+    text-align:right;
+    padding-right: 15px;
+  
+}
+#user_info td {
+    font-size: 1.2em;
+    text-align: left;
+}
+#images_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#images_div td {
+    padding-left:0px;
+    margin-left: 20px;
+}
+.image_float_left2 img{
+    display:inline;
+    float:left;
+    margin-left: 0px;
+    margin-top:0px;
+    padding: 5px;
+}
+
+/* footer stuff here *****************************/
+footer {
+    clear:both;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #1F8A70; 
+    min-height: 20px;
+    margin-top: 10px;
+}
+footer p {
+    padding: 5px 0px 5px 0px;	
+}
+
+
